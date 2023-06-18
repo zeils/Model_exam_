@@ -34,7 +34,7 @@ print(solution[a])
 Answer = solution[a] * t**5 + solution[b] * t**4 + solution[c] * t**3 + solution[d] * t**2 + solution[e] * t + solution[f]
 
 ### Построим график траектории
-t = np.linspace(-100, 100, 1000) # Создание массива значений t от -100 до 100
+t = np.linspace(0, 200, 1000) # Создание массива значений t от 0 до 200
 S = solution[a] * t**5 + solution[b] * t**4 + solution[c] * t**3 + solution[d] * t**2 + solution[e] * t + solution[f]
 plt.plot(t, S)
 plt.xlabel('t')
@@ -45,8 +45,8 @@ plt.show()
 
 
 ### Построим график скорости
-t = np.linspace(-100, 100, 1000) # Создание массива значений t от -100 до 100
-S = 5*solution[a] * t**4 + 4*solution[b] * t**3 + 3*solution[c] * t**2 + 2*solution[d] * t + solution[e] * t
+t = np.linspace(0, 200, 1000) # Создание массива значений t от 0 до 200
+S = 5*solution[a] * t**4 + 4*solution[b] * t**3 + 3*solution[c] * t**2 + 2*solution[d] * t + solution[e] 
 plt.plot(t, S)
 plt.xlabel('t')
 plt.ylabel('S')
@@ -55,7 +55,7 @@ plt.grid(True)
 plt.show()
 
 ### Построим график ускорения
-t = np.linspace(-100, 100, 1000) # Создание массива значений t от -100 до 100
+t = np.linspace(0, 200, 1000) # Создание массива значений t от 0 до 200
 S = 20*solution[a] * t**3 + 12*solution[b] * t**2 + 6*solution[c] * t + 2*solution[d] 
 plt.plot(t, S)
 plt.xlabel('t')
@@ -66,7 +66,7 @@ plt.show()
 
 
 ### Построим график 3й производной
-t = np.linspace(-100, 100, 1000) # Создание массива значений t от -100 до 100
+t = np.linspace(0, 200, 1000) # Создание массива значений t от 0 до 200
 S = 60*solution[a] * t**2 + 24*solution[b] * t + 6*solution[c] 
 plt.plot(t, S)
 plt.xlabel('t')
